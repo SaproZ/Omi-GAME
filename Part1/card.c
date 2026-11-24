@@ -18,6 +18,8 @@ void initDeck(Card deck[])
         }
     }
 }
+
+//shuffles the deck by walking backwards from the last card
 void shuffleDeck(Card deck[], int size)
 {
     for (int i = size - 1; i > 0; i--) 

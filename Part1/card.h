@@ -1,11 +1,11 @@
 #ifndef CARD_H //guard incase of duplication
 #define CARD_H
 
-#define NUM_SUITS 4
-#define NUM_RANKS 8
-#define DECK_SIZE (NUM_SUITS * NUM_RANKS)
+#define NUM_SUITS 4 //no of suits
+#define NUM_RANKS 8 // no of ranks
+#define DECK_SIZE (NUM_SUITS * NUM_RANKS) //total cards 32
 
-#define CLUBS       'C'
+#define CLUBS       'C' 
 #define DIAMONDS    'D'
 #define HEARTS      'H'
 #define SPADES      'S'
@@ -25,10 +25,10 @@ typedef struct {
 } Card;                    
 
 //prototypes of functions
-void initDeck(Card deck[]);                 
-void shuffleDeck(Card deck[], int size);   
-void printCard(Card card);                 
-void printDeck(Card deck[], int size);      
-int  deckIsValid(Card deck[], int size);    
+void initDeck(Card deck[]); //fill deck[] array with all 32 cards in order
+void shuffleDeck(Card deck[], int size); //put the cards into random order
+void printCard(Card card); //print one card eg: 9H
+void printDeck(Card deck[], int size); //print the deck, 8 cards
+int  deckIsValid(Card deck[], int size); //check the validity of each card
 
 #endif
